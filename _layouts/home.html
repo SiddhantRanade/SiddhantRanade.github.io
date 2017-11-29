@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+          <div class="home">
+            <div style="overflow: auto">
+              <div style="display: inline-block; width:30%;">
+                <img src={{ "/images/Siddhant.jpg" | absolute_url}} alt="Siddhant Ranade">
+              </div>
+
+              <div style="display: inline-block;">
+                <ul style="list-style-type:none;">
+                    <li>
+                      {% if site.author %}
+                        <h2>{{ site.author | escape }}</h2>
+                      {% else %}
+                        <h2>{{ site.title | escape }}</h2>
+                      {% endif %}
+                      </li>
+                      {% if site.email %}
+                      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                      {% endif %}
+                      {% if site.github_username %}
+                      <li>
+                        {% include icon-github.html username=site.github_username %}
+                      </li>
+                      {% endif %}
+                  </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="">
+          {{ content }}
+          </div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>
