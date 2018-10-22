@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {%- if page.author -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+      {%- if page.venue -%}
+        <span itemprop="venue" itemscope itemtype="http://schema.org/Person"><span class="p-venue h-card" itemprop="name"> • {{ page.venue }}</span></span>
+      {%- endif -%}</p>
+    {%- if page.pdf -%} <span><a href="{{page.pdf}}"> PDF </a> </span> {%- endif -%}
+    {%- if page.website -%} • <span><a href="{{page.website}}"> Website </a> </span> {%- endif -%}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: paper
 title: "Learning Material-Aware Local Descriptors for 3D Shapes"
+author: "Hubert Lin, Melinos Averkiou, Evangelos Kalogerakis, Balazs Kovacs, Siddhant Ranade, Vladimir G. Kim, Siddhartha Chaudhuri, and Kavita Bala"
 venue: "3DV 2018"
 picture: "/research/assets/18_3DV_ShapeMatFeat.jpg"
 pdf: "/research/assets/18_3DV_ShapeMatFeat.pdf"

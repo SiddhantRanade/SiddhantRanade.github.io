@@ -6,8 +6,8 @@ permalink: /research/
 
 <table>
 <colgroup>
-<col width="20%" />
-<col width="80%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 
@@ -17,10 +17,11 @@ permalink: /research/
   <td><img src="{{paper.picture}}" alt="{{paper.title}}"></td>
   <td>
   <div><b>{{ paper.title }}</b></div>
-  <div><i>{{ paper.venue }}</i></div>
-  <p>{{ paper.content | truncatewords:20 | strip_html }} <a href="{{ paper.url }}">more</a></p>
-  <span><a href="{{paper.pdf}}"> PDF </a> </span> &nbsp; &nbsp;
-  <span><a href="{{paper.website}}"> Website </a> </span> &nbsp; &nbsp;
+  <div><i>{{ paper.author }}</i></div>
+  <div><b>{{ paper.venue }}</b></div>
+  <div>{{ paper.content | truncatewords:20 | strip_html }} <a href="{{ paper.url }}">more</a></div>
+  <div>{%- if paper.pdf -%} <span><a href="{{paper.pdf}}"> PDF </a> </span> {%- endif -%}
+  {%- if paper.website -%} • <span><a href="{{paper.website}}"> Website </a> </span> {%- endif -%}</div>
   </td>
 </tr>
 
