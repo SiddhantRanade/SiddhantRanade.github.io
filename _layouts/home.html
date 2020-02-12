@@ -33,6 +33,11 @@
                         {% include icon-github.html username=site.github_username %}
                       </li>
                       {% endif %}
+                      {% if site.google_scholar %}
+                      <li>
+                        <img src=https://scholar.google.com/favicon.ico style="height:1em;"> <a href="{{site.google_scholar}}"></a>
+                      </li>
+                      {% endif %}
                   </ul>
               </div>
 
