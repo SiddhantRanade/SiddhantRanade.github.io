@@ -13,7 +13,10 @@ layout: default
         <span itemprop="venue" itemscope itemtype="http://schema.org/Person"><span class="p-venue h-card" itemprop="name"> • {{ page.venue }}</span></span>
       {%- endif -%}</p>
     {%- if page.pdf -%} <span><a href="{{page.pdf}}"> PDF </a> </span> {%- endif -%}
+    {%- if page.arxiv -%} • <span><a href="{{page.arxiv}}"> arXiv </a> </span> {%- endif -%}
     {%- if page.website -%} • <span><a href="{{page.website}}"> Website </a> </span> {%- endif -%}
+    {%- if page.conf -%} • <span><a href="{{page.conf}}"> Conference Page </a> </span> {%- endif -%}
+    {%- if page.video -%} • <span><a href="{{page.video}}"> Video </a> </span> {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
