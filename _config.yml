@@ -23,7 +23,7 @@ url: "https://siddhantranade.github.io/" # the base hostname & protocol for your
 github_username:  SiddhantRanade
 google_scholar:  "https://scholar.google.com/citations?user=tcqHWW8AAAAJ"
 linkedin_username: "siddhantranade"
-instagram_username: "siddhantranade"
+# instagram_username: "siddhantranade"
 
 # Build settings
 markdown: kramdown
