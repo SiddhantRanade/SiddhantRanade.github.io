@@ -10,7 +10,8 @@ pdf: ""
 video: "https://www.youtube.com/watch?v=W3YTHxEfaXQ"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W3YTHxEfaXQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/W3YTHxEfaXQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 Neural Radiance Fields (NeRFs) encode the radiance in a scene parameterized by the scene's plenoptic function.
 This is achieved by using an MLP together with a mapping to a higher-dimensional space, and has been proven to capture scenes with a great level of detail.
