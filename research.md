@@ -4,20 +4,18 @@ title: Research
 permalink: /research/
 ---
 
-<table>
+<table style="border: 0px;">
 <colgroup>
 <col width="30%" />
 <col width="70%" />
 </colgroup>
 <tbody>
-
-{% for paper in site.categories.research %}
-
-<tr>
-  <td style="padding:0.2em;">
-    <img src="{{paper.picture}}" alt="{{paper.title}}" style="max-height:12em;margin:auto;display:block;">
+{% for paper in site.categories.research -%}
+<tr style="border:0px;">
+  <td style="border:0px; padding:.2em;">
+    <img src="{{paper.picture}}" alt="{{paper.title}}" style="max-height:12em; margin:auto; display:block;">
   </td>
-  <td>
+  <td style="border: 0px; padding:3em 1em;">
   <div><b><a href="{{ paper.url }}">{{ paper.title }}</a></b></div>
   <div><i>{{ paper.author }}</i></div>
   <div>
@@ -31,8 +29,6 @@ permalink: /research/
   <div>{{ paper.content | strip_html | truncatewords:20  }} <a href="{{ paper.url }}">more</a></div>
   </td>
 </tr>
-
-
 {% endfor %}
 </tbody>
 </table>
