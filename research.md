@@ -21,7 +21,7 @@ permalink: /research/
   <div><b><a href="{{ paper.url }}">{{ paper.title }}</a></b></div>
   <div><i>{{ paper.author }}</i></div>
   <div>
-    <b>{{ paper.venue }}</b>
+    <b>{{ paper.venue }} </b>
     {%- if paper.pdf -%} • <span><a href="{{paper.pdf}}"> PDF </a> </span> {%- endif -%}
     {%- if paper.arxiv -%} • <span><a href="{{paper.arxiv}}"> arXiv </a> </span> {%- endif -%}
     {%- if paper.website -%} • <span><a href="{{paper.website}}"> Website </a> </span> {%- endif -%}
